@@ -59,7 +59,7 @@ for paths in pathing:
         new_life += 10000
     if Pacman.lives == 0:
         break
-# prints out the lives and score for each time an item is hit in pacman.txt file
+# prints out the lives and score for each time an item is hit in pacman.txt file to get the final score
     print(f"Lives: {Pacman.lives}\n"
         f"Points: {Pacman.points}")
 
