@@ -11,8 +11,8 @@ class Pacman:
     def bonus_life():
         Pacman.lives += 1
     # this calculates how the fruit points are added
-    def devour(food):
-        Pacman.points += food
+    def devour(fruit):
+        Pacman.points += fruit
         return Pacman.points
     # this calculates how the vulnerable ghosts points work
     def devour_ghosts():
@@ -59,7 +59,7 @@ for paths in pathing:
         new_life += 10000
     if Pacman.lives == 0:
         break
-
+# prints out the lives and score for each time an item is hit in pacman.txt file
     print(f"Lives: {Pacman.lives}\n"
         f"Points: {Pacman.points}")
 
